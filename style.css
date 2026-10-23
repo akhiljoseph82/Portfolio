@@ -1,0 +1,294 @@
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #C654C3;
+    font-family: "Playfair Display", serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+    background-color: #57d1f6;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: sticky;
+    top: 0;
+}
+header img{
+    width: 100px;
+    border-radius: 20px;
+    padding: 5px;
+}
+header ul{
+    display: flex;
+}
+header ul li{
+    list-style: none;
+    margin: 20px;
+
+}
+ header ul li:hover{
+    border-bottom: 2px solid #ece4e6;
+    text-shadow: 3px 2px 5px rgb(247, 92, 9);
+ }
+header ul li a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+#whtsp{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+#home{
+    width: 100%;
+    height: 100vh;
+    background-color: bisque;
+}
+#boy{
+    transition: transform 1s ease-in;
+}
+#boy:hover{
+    transform: rotate(360deg)
+}
+.row{
+    display:flex;
+    width: 100%;
+    height: 100vh;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+span{
+    font-size: 100px;
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+#skills{
+    margin: 0;
+    padding: 10px;
+    background-color: #D0F288;
+}
+#skills h1{
+ font-family: "Bungee", sans-serif;
+ text-align: center;
+ margin: 20px;
+}
+.col1{
+    width: 260px;
+    height: 200px;
+    flex-wrap: wrap;
+    background-color: #8ADAB2;
+    margin: 20px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 4px 5px 6px 8px #e81cff;
+    transition: width 2s,height 4s, background-color 3s;
+
+}
+.col1:hover{
+    width: 350px;
+    height: 400px;
+    background-color: #C654C3;
+}
+
+.col1 i{
+    width: 260px;
+    height: 200px;
+    font-size: 100px;
+    margin-top: 40px;
+color: rgba(29, 28, 28, 0.748);
+}
+#projects h1{
+    text-align: center;
+    align-items: center;
+    margin: 20px;
+}
+.col2{
+width: 301px;
+height: 200px;
+border: 2px solid brown;
+display: flex;
+flex-wrap: wrap;
+margin: 50px;
+text-align: center;
+    
+}
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+.col3{
+    border: 2px solid brown;
+    width: 301px;
+height: 500px;
+border: 2px solid brown;
+display: flex;
+flex-wrap: wrap;
+margin: 30px;
+text-align: center;
+align-items:top center;
+padding: 20px;
+}
+#services h1{
+
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+
+}
+/* From Uiverse.io by aadium */ 
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-image: linear-gradient(45deg, #330808, 
+  #3a2c09);
+  border-radius: 2.5em;
+  padding: 30px;
+  width: 300px;
+  height: 350px;
+}
+
+.form::before {
+  content: '';
+  background-image: linear-gradient(45deg, #ff0000, 
+  #ffb700);
+  height: 358px;
+  width: 309px;
+  position: absolute;
+  margin-top: -34px;
+  margin-left: px;
+  z-index: -1;
+  border-radius: 2.7em;
+}
+
+.button {
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  background: #ff5900;
+  color: black;
+  padding: 0.7em 5.5em;
+  display: flex;
+  align-items: center;
+  border: 2px solid #66da4300;
+  border-radius: 5em;
+  overflow: hidden;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.button:hover {
+  border: 2px solid #ff5900;
+  background: #00000000;
+  color: #ff5900;
+}
+
+.button:active {
+  border: 2px solid #66da4300;
+  background: #ff5900;
+  color: black;
+}
+
+.input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+
+.input:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: white;
+}
+
+.input::placeholder {
+  color: #9b725b;
+}
+
+.textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: calc(100% - 10px);
+  padding: 8px;
+  height: 100px;
+  margin-bottom: 20px;
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  outline: none;
+  background-color: transparent;
+  color: #ff5900;
+}
+
+.textarea::placeholder {
+  color: #9b725b;
+}
+
+.textarea:focus {
+  border: 1px solid #66da4300;
+  border-bottom: 1px solid #ff5900;
+  background-color: transparent;
+  color: white;
+}
+#contact h1{
+
+    text-align: center;
+    align-items: center;
+    margin: 10px;
+}
